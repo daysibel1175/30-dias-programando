@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- codigos de estilos css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@500;700&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+    <title>Codepay</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><h1>Codepay.</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Comprar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ajuda</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Conta
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Entrar</a>
+                    <a class="dropdown-item" href="#">Cadastrar-se</a>
+                    <li class="nav-item">
+                        <span class="navbar-text" href="#">2 items</span>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-shopping-cart" ></i></a>
+                      </li>
+                   
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+<main>
+    <!-- começo do nav-tab -->
+<div>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="tab-conta" data-toggle="pill" href="#conta" role="tab" aria-controls="conta" aria-selected="true"><i class="fa fa-user"></i>Conta</a>
+        </li>
+        <span>_</span>
+        <li class="nav-item">
+          <a class="nav-link" id="tab-envio" data-toggle="pill" href="#envio" role="tab" aria-controls="envio" aria-selected="false"><i class="fa fa-truck" aria-hidden="true"></i>
+            Envio</a>
+        </li>
+        <span>_</span>
+        <li class="nav-item">
+          <a class="nav-link" id="tab-pagamento" data-toggle="pill" href="#pagamento" role="tab" aria-controls="pagamento" aria-selected="false"><i class="fa fa-credit-card" aria-hidden="true"></i>
+            Pagamento</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="conta" role="tabpanel" aria-labelledby="tab-conta">...</div>
+        <div class="tab-pane fade" id="envio" role="tabpanel" aria-labelledby="tab-envio">...</div>
+        <div class="tab-pane fade" id="pagamento" role="tabpanel" aria-labelledby="tab-pagamento">...</div>
+      </div> 
+</div>
+<!-- fim do nav-tab -->
+<!-- body da tab conta -->
+<div>
+    <h2>Detalhes da conta</h2>
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email </label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="daysicotiz@gmail.com">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Senha</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="123@password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <a class="form-link" href="#">Registre-se para conta</a>
+        </div>
+        <button type="submit" class="btn btn-primary">Entra</button>
+      </form>
+</div>
+<div>
+    <a href="#">Cancelar pedido</a>
+    <button type="menu" class="btn btn-primary">Continuar comprando</button> 
+</div>
+<div>
+    <div class="">
+        <h2>Resumo do pedido</h2>
+        <img src="imgs/mouse.jpg" alt="" width="400px" height="200px">
+    </div>
+    <div>
+        <h3 id="">Mouse Game Redagron</h3>
+        <span id="preco">R$ 15,22</span>
+        <button  class="btn btn-sm" id="menos">-</button>
+        <span>1</span>
+        <button class="btn btn-sm" id="mais">+</button>
+    </div>
+    <div>
+        <span>Cupon de desconto</span>
+        <button class="btn btn-primary" id="">Aplicar</button> 
+    </div>
+    <div>
+        <span>Taxa</span>
+        <span>R$3,45</span>
+        <span>Envio</span>
+        <span>Gratis</span>
+    </div>
+    <div>
+        <span>Total</span>
+        <span>R$30,44</span>
+    </div>
+</div>
+</main>
+<footer>
+
+</footer>
+
+
+<!-- bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
