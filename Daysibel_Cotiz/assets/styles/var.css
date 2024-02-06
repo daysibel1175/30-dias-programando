@@ -1,0 +1,11 @@
+:root{
+    /* FONTS */
+    --font-Inter:"Inter, sem serifa";
+
+    /* COLORS */
+    --preto: #262626;
+    --cinza: #414141;
+    --cinza-claro: #737373;
+    --branco: #ffffff;
+    --verde: #269E6D;
+}

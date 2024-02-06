@@ -1,0 +1,45 @@
+@import url('../styles/reset.css');
+@import url('../styles/var.css');
+*{
+    font-family: var(--font-Inter);
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header .nav-header{
+width: auto;
+border: 0 0 1px 0;
+gap:1rem;
+text-align: center;
+padding: 0 100px 0 100px;
+height: 80px;
+}
+.navbar-brand h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--cinza);
+}
+header .icones{
+    display: none;
+}
+header .nav-content{
+    gap: 30px;
+    color: var(--verde)
+}
+.star{
+    margin-right: 90px;
+    left: 0;
+    gap: 10px;
+}
+.end{
+    gap: 30px;
+    align-items: center;
+}
+.itens{
+gap: 10px;
+display: flex;
+flex-direction: row;
+}
+main{
+
+}
