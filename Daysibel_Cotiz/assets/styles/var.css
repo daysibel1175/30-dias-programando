@@ -3,9 +3,12 @@
     --font-Inter:"Inter, sem serifa";
 
     /* COLORS */
-    --preto: #262626;
+    --background-color: #262626;
     --cinza: #414141;
     --cinza-claro: #737373;
     --branco: #ffffff;
-    --verde: #269E6D;
+    --verde: #2fbd6a;
+    --input-color: #f9f9f9;
+    --branco-border: #f3efef;
+    --vermelho-danger: #d1402c;
 }

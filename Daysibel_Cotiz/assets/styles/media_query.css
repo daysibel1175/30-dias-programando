@@ -1,0 +1,160 @@
+
+@media screen and (max-width: 991px) {
+  .navbar-expand-lg{
+    width: 100vw !important;
+    border-bottom: 1px solid var(--branco-border);
+  }
+  header div nav.navbar {
+    margin: 0 !important;
+    padding: 24px 0 24px 0 !important;
+   width:100vw !important;
+    gap: 84px;
+    height: 60px;
+    border: 0 0 1px 0 solid var(--branco-border);
+    display: flex;
+    align-content: center;
+    justify-content: space-between !important;
+  }
+  .navbar-brand h1{
+    padding: 0 0 0 30px!important;
+    margin: 0 !important;
+    margin-right: auto;
+  }
+  #menu-btn{
+    position: relative;
+    float: right !important;
+    padding: 9px !important;
+  }
+  #navbarNavDropdown,
+  #menu-usuario {
+
+    border: 1px solid var(--cinza-claro);
+    border-radius: 12px;
+    margin: 0;
+    padding: 0;
+    top:60px;
+    position: absolute;
+  }
+  #menu-usuario{
+    right: 0%;
+    left: 0%;
+    padding: 10px 0 10px 10px;
+    max-width: fit-content !important;
+    max-height: max-content;
+    background-color: var(--branco);
+    flex-direction: row !important;
+  }
+  .itens.dropdown.show{
+    padding: 0;
+  }
+
+  #navbarNavDropdown{
+    right: 18px;
+    padding: 5px 30px;
+    background-color: var(--branco);
+  }
+  .dropdown-menu.show{
+    border: 0;
+    padding: 0;
+    text-align: start;
+    left: 0 !important;
+    min-width: 6.2rem;
+    overflow: hidden;
+    top: 80px !important;
+  }
+  .dark-mode-active .dropdown-menu.show
+{
+  background-color: var(--background-color);
+  color: var(--branco);
+}
+  .star{
+    gap: 0;
+    align-items: center;
+    text-decoration: underline;
+  }
+  .end{
+    gap: 0;
+    text-decoration: underline;
+    flex-direction: column !important;
+  }
+  .carrinho{
+    display: none;
+  }
+  nav i {
+    color: var(--cinza);
+    box-shadow: 1px
+  }
+  i{
+    color: var(--background-color);
+  }
+  .navbar-toggler {
+    display: flex;
+    margin: 0 10px 0 10px;
+    width: 50px;
+    height: 40px;
+    padding: 1px;
+    align-items: center;
+    justify-content: center;
+    border: 0 !important;
+
+  }
+  #pills-tab {
+    gap: 30px !important;
+    height: 100px;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .container_tabs {
+    flex-direction: column;
+    margin: 0 !important;
+    padding: 5rem;
+    display: flex;
+    width: 100vw !important;
+    height: auto;
+    gap: 64px !important;
+    border:0 !important;
+  }
+div.registro{
+  display: none;
+}
+div.cancelar_pedido{
+ display: flex;
+ flex-direction: column-reverse;
+ align-items: center;
+ width: inherit;
+ gap: 24px;
+}
+.link_cp{
+  background-color: #ffdada !important;
+  width: 100%;
+  border-radius: 0 !important;
+  text-align: center;
+}
+hr 
+hr{
+  display: none;
+}
+  .dados_do_usuario,
+  .resumo_do_pedido{
+    width: inherit !important;
+    padding: 36px !important;
+  }
+  .resumo_do_pedido{
+    margin: 50px 0 50px 0 !important;
+  }
+  #img_produto{
+    width: 100%;
+    height: 150px;
+  }
+  .div-i {
+    width: auto !important;
+    align-items: center;
+    
+  }
+  #quantidade{
+    font-size: 14px !important;
+    font-weight: 800 !important;
+  }
+
+  
+}

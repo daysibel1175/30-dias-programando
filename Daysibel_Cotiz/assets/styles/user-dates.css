@@ -1,0 +1,80 @@
+
+@import url('../styles/reset.css');
+@import url('../styles/var.css');
+
+/* codigo para tirar os botoes do input type number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+/* nav-pills */
+.nav-pills .nav-link.active{
+    background-color: transparent !important;
+    color: var(--verde) !important;
+
+}
+.nav-item{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+/* tab conta */
+.form_tri{
+    padding: 0 0 80px 0;
+}
+.link_r{
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--preto);
+}
+.div-i{
+padding: 40px 0 40px 0;
+}
+.div-i input{
+    background-color: var(--input-color);
+    border: 1px solid var(--branco-border);
+}
+.link_cp{
+    color:var(--vermelho-danger);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 24px;
+}
+.link_cp:hover,
+.link_r:hover{
+text-decoration:underline;
+color: var(--preto);
+}
+.link_cp:hover{
+    color: var(--vermelho-danger);
+}
+.links_rcp{
+    display: inline;
+    text-align: end;
+}
+.div-i .btn{
+background-color: var(--verde) !important;
+border: 0 !important;
+padding: 12px 20px;
+font-size: 16px;
+font-weight: 500;
+border-radius: 4px;
+}
+hr{
+    background-color: #e2e8f0;
+}
+.row_form{
+    gap: 16px;
+}
+.row_dates{
+    display: flex;
+    justify-content: space-between;
+}
+.exp-date{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}

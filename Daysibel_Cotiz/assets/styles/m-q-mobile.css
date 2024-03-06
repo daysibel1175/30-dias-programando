@@ -1,0 +1,91 @@
+@media screen and (max-width: 530px) {
+    main{
+      padding: 48px 4px;
+    }
+
+    nav{
+     position: absolute;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--branco-border) !important;
+    }
+    header div nav.navbar{
+        gap: 0;
+    }
+    #menu-btn{
+      padding: 0 !important;
+      justify-content: space-between;
+      gap:0;
+    }
+    .btn-d{
+        margin: 0;
+    }
+    .navbar-toggler {
+        margin: 0;
+        width: 40px;
+        height: 30px;
+    }
+ 
+    div.div-i{
+        padding: 0 !important;
+    }
+    #pills-tab {
+      gap: 3px !important;
+      height: 15px;
+      justify-content: space-between;
+      align-content: center;
+    }
+  #tab-conta,
+  #tab-envio,
+  #tab-pagamento {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--preto);
+  }
+  #tab-conta .far,
+  #tab-envio .fa,
+  #tab-pagamento .fa {
+    padding: 0 8px 0 0 !important;
+    font-size: 12px;
+  }
+  .titulos,#icone-user-nav,#icone-shopping-nav{
+    font-size: 16px !important;
+  }
+
+  #nome_do_produto,
+  .taxa,
+  .envio,
+  .total{
+    font-size: 14px;
+  }
+  label, input, #preco{
+    font-size: 12px !important;
+  }
+  button{
+font-size: 16px !important;
+  }
+  .link-cp{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 370px) {
+#menu-btn{
+    gap:0;
+}
+.btn-d{
+    margin: 0;
+}
+.navbar-toggler {
+    margin: 0;
+    width: 40px;
+    height: 30px;
+}
+#pills-tab {
+    gap: 0px !important;
+}
+.titulos-pills{
+    display: none;
+}
+.exp-date{
+    gap: 5px;
+}
+}

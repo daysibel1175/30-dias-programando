@@ -2,260 +2,346 @@
 <html lang="pt-Br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- codigos de estilos css -->
-  <link rel="stylesheet" href="./assets/styles/style.css">
-  <link rel="stylesheet" href="./assets/styles/description.css">
-  <link rel="stylesheet" href="./assets/styles/reset.css">
-  <link rel="stylesheet" href="./assets/styles/user-dates.css">
-  <link rel="stylesheet" href="./assets/styles/var.css">
-  <!-- bootstrap link -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- codigos de estilos css -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/user-dates.css">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/var.css">
+    <link rel="stylesheet" href="./assets/styles/media_query.css">
+    <link rel="stylesheet" href="./assets/styles/m-q-mobile.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@500;700&display=swap"
-    rel="stylesheet">
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 
-  <title>Codepay</title>
+    <title>Codepay</title>
 </head>
 
-<body>
-  <header>
-    <div class="nav-container">
-      <nav class="navbar navbar-expand-lg navbar-light nav-header align-items-center">
-      
-        <a class="navbar-brand" href="#">
-          <h1>Codepay.</h1>
-        </a>
-        <!-- menu de tela pequena --> 
-        <div class="navbar-toggler">
-            <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
-      </div>
-        <div class="navbar-toggler"> <a class="nav-link active" id="tab-conta" data-toggle="pill" href="#conta" role="tab" aria-controls="conta"
-          aria-selected="true"><i class="fa fa-user"></i></a></div>
-        
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- fim de menu de tela pequena -->
-        <div class="collapse navbar-collapse nav-content" id="navbarNavDropdown">
-          <ul class="navbar-nav star">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Comprar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Ajuda</a>
-            </li>
-            </ul>
-            <ul class="navbar-nav end">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Conta
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Entrar</a>
-                <a class="dropdown-item" href="#">Cadastrar-se</a>
-              </div>
-              </li>
-            <li class="nav-item itens">
-              <span class="navbar-text" href="#">2 items</span>
-              <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
-            </li>
-        </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+<body class="">
+    <header>
+        <div class="nav-container">
+            <nav class="navbar navbar-expand-lg navbar-expand-xl nav-header " id="navbar">
 
-  <main>
-    <!-- começo do nav-tab -->
-    <div>
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="tab-conta" data-toggle="pill" href="#conta" role="tab" aria-controls="conta"
-            aria-selected="true"><i class="fa fa-user"></i>Conta</a>
-        </li>
-        <span>_</span>
-        <li class="nav-item">
-          <a class="nav-link" id="tab-envio" data-toggle="pill" href="#envio" role="tab" aria-controls="envio"
-            aria-selected="false"><i class="fa fa-truck" aria-hidden="true"></i>
-            Envio</a>
-        </li>
-        <span>_</span>
-        <li class="nav-item">
-          <a class="nav-link" id="tab-pagamento" data-toggle="pill" href="#pagamento" role="tab"
-            aria-controls="pagamento" aria-selected="false"><i class="fa fa-credit-card" aria-hidden="true"></i>
-            Pagamento</a>
-        </li>
-      </ul>
-      <!-- inicio do conteudo do nav-tab -->
-      <div class="tab-content" id="pills-tabContent">
-        <!-- body da tab conta -->
-        <div class="tab-pane fade show active" id="conta" role="tabpanel" aria-labelledby="tab-conta">
+                <a class="navbar-brand" href="#">
+                    <h1>Codepay.</h1>
+                </a>
 
-          <h2>Detalhes da conta</h2>
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email </label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="daysi@gmail.com">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Senha</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="123@password">
-            </div>
-            <button type="submit" class="btn btn-primary">Entrar</button>
-          </form>
+                <!-- nav na tela de 768px -->
+
+                <div id="menu-btn" class="navbar">
+                    <div class="navbar-toggler">
+                        <a id="icone-shopping-nav" class="btn-d" href="#"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+
+
+
+                    <button class="navbar-toggler btn-d" type="button" data-toggle="collapse"
+                        data-target="#menu-usuario" aria-controls="menu-usuario" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span id="icone-user-nav"><i class="far fa-user"></i></span>
+                    </button>
+
+
+                    <button class="navbar-toggler btn-d" type="button" data-toggle="collapse"
+                        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <!-- fim de menu de tela pequena -->
+                    <div class="nav-content">
+                        <div class="collapse navbar-collapse dropdown-content" id="navbarNavDropdown">
+
+                            <ul class="navbar-nav star">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Comprar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contato</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Ajuda</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="collapse navbar-collapse " id="menu-usuario">
+                            <button id="btn_dark_mode"><img id="img-darkmode" src="./src/svg/dark-mode.svg"
+                                    alt=""></button>
+
+                            <ul class="navbar-nav end">
+                                <li class="nav-item itens dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Conta
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Entrar</a>
+                                        <a class="dropdown-item" href="#">Cadastre-se</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item itens carrinho">
+                                    <span class="navbar-text" href="#">2 items</span>
+                                    <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- menu de tela pequena -->
+
+            </nav>
         </div>
-        <!-- fim do body da tab conta -->
-        <!-- body da tab envio-->
-        <div class="tab-pane fade" id="envio" role="tabpanel" aria-labelledby="tab-envio">
-          <h2>Detalhes do envio</h2>
-          <div>
-            <form>
-              <div class="form-group">
-                <label for="inputUserEmail">Usar o endereço salvo</label>
-                <select id="inputUserEmail" class="form-control">
-                  <option selected>daysi@gmail.com</option>
-                  <option>.......</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="inputCidade">Cidade</label>
-                <input type="text" class="form-control" id="inputCidade" placeholder="Belo Horizonte">
-              </div>
-              <div class="form-group">
-                <label for="inputEndereco">Rua, Bairro</label>
-                <input type="text" class="form-control" placeholder="Rua tal Bairro tal" id="inputEndereco">
-              </div>
-              <div class="form-row">
-                <div class="row align-items-center">
-                  <div class="col-auto">
-                    <label for="inputNumeroCasa">Numero</label>
-                    <input type="number" class="form-control" placeholder="77">
-                  </div>
-                  <div class="col-auto">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                      <option selected>São Paulo</option>
-                      <option>Minas Gerais</option>
-                    </select>
-                  </div>
+    </header>
+
+    <main>
+        <!-- começo do nav-tab -->
+        <div class="container_tabs">
+            <div class="div-i">
+                <!-- div da izquerda -->
+
+                <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="tab-conta" data-toggle="pill" href="#conta" role="tab"
+                            aria-controls="conta" aria-selected="true"><i class="far fa-user"></i><span
+                                class="titulos-pills" id="titulo_tab_conta">Conta</span></a>
+                    </li>
+                    <span>_</span>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-envio" data-toggle="pill" href="#envio" role="tab"
+                            aria-controls="envio" aria-selected="false"><i class="fa fa-truck" aria-hidden="true"></i>
+                            <span class="titulos-pills" id="titulo_tab_envio">Envio</span></a>
+                    </li>
+                    <span>_</span>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tab-pagamento" data-toggle="pill" href="#pagamento" role="tab"
+                            aria-controls="pagamento" aria-selected="false"><i class="fa fa-credit-card"
+                                aria-hidden="true"></i>
+                            <span class="titulos-pills" id="titulo_tab_pagamento">Pagamento</span></a>
+                    </li>
+                </ul>
+                <!-- inicio do conteudo do nav-tab -->
+                <div class="tab-content dados_do_usuario na" id="pills-tabContent">
+                    <!-- body da tab conta -->
+                    <div class="tab-pane fade show active" id="conta" role="tabpanel" aria-labelledby="tab-conta">
+                        <h2 class="titulos">Detalhes da conta</h2>
+                        <form class="form_tri needs-validation" id="formLogin" novalidate>
+                            <div class="form-group">
+                                <label for="inputEmail">Email </label>
+                                <input type="email" class="form-control " id="inputEmail" 
+                                    placeholder="daysi@gmail.com" required >
+                                    <div class="invalid-feedback">
+                                        email invalido
+                                                                    </div>
+                            </div>
+                           
+                            <div class="form-group">
+                                <label for="inputPassword">Senha</label>
+                                <input type="password" class="form-control" id="inputPassword"
+                                    placeholder="123@password" aria-describedby="passwordHelp" required> 
+                                    <div class="invalid-feedback">
+                                        senha invalida
+                                                                   </div>
+                                    <small id="passwordHelp" class="form-text text-muted"> A senha deve conter pelo menos 8 digitos</small>
+                                    
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <!-- fim do body da tab conta -->
+                    <!-- body da tab envio-->
+                    <div class="tab-pane fade" id="envio" role="tabpanel" aria-labelledby="tab-envio">
+                        <h2 class="titulos">Detalhes do envio</h2>
+                        <div>
+                            <form class="form_tri need-validation">
+                                <div class="form-group">
+                                    <label for="inputUserEndereco">Usar o endereço salvo</label>
+                                    <select id="inputUserEndereco" class="form-control">
+                                        <option selected>rua z</option>
+                                        <option>.......</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputCidade">Cidade</label>
+                                    <input type="text" class="form-control" id="inputCidade"
+                                        placeholder="Belo Horizonte">
+                                </div>
+                                <div class="form-group ">
+                                    <label for="inputEndereco">Rua, Bairro</label>
+                                    <input type="text" class="form-control" placeholder="Rua tal Bairro tal"
+                                        id="inputEndereco">
+                                </div>
+
+                                <div class="row row_form">
+                                    <div class="col">
+                                        <label for="inputNumeroCasa">Numero</label>
+                                        <input id="inputNumeroCasa" type="text" class="form-control" placeholder="77" maxlength="2">
+                                    </div>
+                                    <div class="col">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>São Paulo</option>
+                                            <option>Minas Gerais</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                        </div>
+                        </form>
+                    </div>
+                    <!-- fim do body da tab envio-->
+                    <!-- body da tab pagamento-->
+                    <div class="tab-pane fade" id="pagamento" role="tabpanel" aria-labelledby="tab-pagamento">
+                        <h2 class="titulos">Detalhes do pagamento</h2>
+                        <form class="form_tri">
+                            <div class="form-group">
+                                <label for="inputCartaoSalvo">Usar o cartão salvo</label>
+                                <select id="inputCartaoSalvo" class="form-control">
+                                    <option selected>Daysi 38**</option>
+                                    <option>.......</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="nome_no_cartao">Nome no cartão</label>
+                                <input type="text" class="form-control" id="nome_no_cartao" placeholder="Jeison L Paz">
+                            </div>
+                            <div class="form-group">
+                                <label for="ccn">Número do cartão</label>
+                                <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}"
+                                    autocomplete="cc-number" maxlength="19" class="form-control"
+                                    placeholder="xxxx xxxx xxxx xxxx" required>
+
+                            </div>
+
+                            <div class="row row_dates">
+                                <div class="col ">
+                                    <label>Expiraçao</label>
+                                    <div class="exp-date ">
+                                        <input type="text" class="form-control " placeholder="07" maxlength="2"
+                                            max="12">
+                                        <span>/</span>
+                                        <input type="text" class="form-control " placeholder="26" maxlength="2">
+                                    </div>
+
+                                </div>
+                                <div class="col">
+                                    <label for="inputCVC">CVC</label>
+                                    <input id="inputCVC" type="text" class="form-control" placeholder="834" maxlength="3">
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <!-- fim do body da tab pagamento-->
+                    <div class="links_rcp">
+                        <div class="registro">
+                            <a class="form-link link_r" href="#">Registre-se para conta</a>
+                            <button type="submit" class="btn btn-primary link_cp" 
+                                id="btnEntrar">Entrar</button>
+                        </div>
+                        <hr>
+                        <div class="cancelar_pedido">
+                            <a class="link_cp" href="#">Cancelar pedido</a>
+                            <button type="submit" form="formLogin" class="btn btn-primary link_cp" id="btnContinuarComprando">Continuar
+                                comprando</button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- fim do conteudo do nav-tab -->
+
+
+            </div>
+            <!--.............................. div  direita  .....................................................-->
+            <div class="resumo_do_pedido na">
+                <div class="resumo_header">
+                    <h2 class="titulos">Resumo do pedido</h2>
+                    <img id="img_produto" src="./assets/imgs/mouse.jpg" alt="" width="400px" height="200px">
+                </div>
+                <div>
+                    <h3 id="nome_do_produto">Mouse Game Redagron</h3>
+                    <div class="preco_botao">
+                        <span id="preco">R$ 15,22</span>
+                        <div class="input-quantidade">
+                            <button class="btn btn-sm" id="menos"><strong><span id="menos-icon"
+                                        class="icons-sm">-</span></strong></button>
+                            <input type="number" id="quantidade" value="1" disabled>
+                            <button class="btn btn-sm" id="mais"><strong><span id="mais-icon"
+                                        class="icons-sm">+</span></strong></button>
+                        </div>
+                    </div>
 
                 </div>
 
-              </div>
-              <a class="form-link" href="#">Registre-se para conta</a>
-          </div>
-          <button type="submit" class="btn btn-primary">Entrar</button>
-          </form>
+                <div class="input-group mb-3 input_botao">
+                    <input type="text" id="input_cupom" class="form-control" maxlength="8"
+                        placeholder="cupom de desconto">
+                    <div class="input-group-append">
+                        <button id="btn-aplicar" class="btn btn-outline-secondary" type="button">Aplicar</button>
+                    </div>
+                </div>
+
+                <div class="resumo">
+                    <div class="taxa">
+                        <span>Taxa</span>
+                        <span>R$3,45</span>
+                    </div>
+                    <div class="envio">
+                        <span>Envio</span>
+                        <span id="gratis">Grátis</span>
+                    </div>
+
+                </div>
+                <div class="total">
+                    <span>Total</span>
+                    <span id="total">R$30,44</span>
+                </div>
+            </div>
         </div>
-        <!-- fim do body da tab envio-->
-        <!-- body da tab pagamento-->
-        <div class="tab-pane fade" id="pagamento" role="tabpanel" aria-labelledby="tab-pagamento">
-          <h2>Detalhes do pagamento</h2>
-          <form>
-            <div class="form-group">
-              <label for="inputCartaoSalvo">Usar o cartão salvo</label>
-              <select id="inputCartaoSalvo" class="form-control">
-                <option selected>Daysi 38**</option>
-                <option>.......</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="inputCidade">Nome no cartão</label>
-              <input type="text" class="form-control" id="inputCidade" placeholder="Jeison L Paz">
-            </div>
-            <div class="form-group">
-              <label for="inputCidade">Numero do cartão</label>
-              <input type="text" class="form-control" id="inputCidade" placeholder="0000 0000 0000 0000 0000" maxlength="11">
-            </div>
-              
-              <div class="row">
-                <div class="col-sm-2">
-                  <label for="inputNumeroCasa">Expiraçao</label>
-                  <input type="number" class="form-control " placeholder="07" maxlength="2">
-                  <span>/</span>
-                  <input type="number" class="form-control " placeholder="26"  maxlength="2">
-                </div>
-                <div class="col-sm-2">
-                  <label for="inputNumeroCasa">CVC</label>
-                  <input type="number" class="form-control" placeholder="834"  maxlength="3">
-                </div>
-              </div>
-          
-            <a class="form-link" href="#">Registre-se para conta</a>
-        <button type="submit" class="btn btn-primary">Entrar</button>
-        </form>
-      </div>
-      <!-- fim do body da tab pagamento-->
-    </div>
-    <!-- fim do conteudo do nav-tab -->
 
-    <a href="#">Cancelar pedido</a>
-    <button type="menu" class="btn btn-primary">Continuar comprando</button>
-    </div>
-    <div>
-      <div class="">
-        <h2>Resumo do pedido</h2>
-        <img src="./assets/imgs/mouse.jpg" alt="" width="400px" height="200px">
-      </div>
-      <div>
-        <h3 id="">Mouse Game Redagron</h3>
-        <span id="preco">R$ 15,22</span>
-        <button class="btn btn-sm" id="menos">-</button>
-        <span>1</span>
-        <button class="btn btn-sm" id="mais">+</button>
-      </div>
-      <div>
-        <span>Cupon de desconto</span>
-        <button class="btn btn-primary" id="">Aplicar</button>
-      </div>
-      <div>
-        <span>Taxa</span>
-        <span>R$3,45</span>
-        <span>Envio</span>
-        <span>Gratis</span>
-      </div>
-      <div>
-        <span>Total</span>
-        <span>R$30,44</span>
-      </div>
-    </div>
-  </main>
-  <footer>
+    </main>
+    <footer>
 
-  </footer>
+    </footer>
 
 
-  <!-- bootstrap scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+
+
+    <!-- bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- scripts -->
+    <script src="./src/script/input_quantidade.js"></script>
+    <script src="./src/script/calcularTotal.js"></script>
+    <script src="./src/script/menuDropdown.js"></script>
+    <script src="./src/script/dark-mode.js"></script>
+    <script src="./src/script/varsDoForm.js"></script>´
+
+
+
 </body>
 
 </html>
