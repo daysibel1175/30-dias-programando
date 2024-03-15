@@ -1,20 +1,8 @@
 document.addEventListener("DOMContentLoaded", function (form) {
 
-  // Obtenemos las referencias a las pestañas y a los campos del formulario
-  let conta = document.getElementById("titulo_tab_conta");
-  let envio = document.getElementById("titulo_tab_envio");
-  let pagamento = document.getElementById("titulo_tab_pagamento");
-
-
-  let nome = document.getElementById("nome_no_cartao");
-  let endereco = document.getElementById("inputUserEndereco");
-  let cartao = document.getElementById("ccn");
-  let cvc = document.getElementById("inputCVC");
-  let btnEntrar = document.getElementById("btnEntrar");
-
 // Agrega un evento al formulario para manejar el envío
-const forms = document.querySelector('.needs-validation');
-forms.addEventListener('submit', function (event) {
+const btn = document.querySelector('#btnContinuarComprando');
+btn.addEventListener('click', function (event) {
   event.preventDefault(); // Evita el envío automático del formulario
 
   // Realiza la validación de la contraseña y el correo electrónico aquí

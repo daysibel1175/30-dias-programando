@@ -207,6 +207,7 @@ nav div button#btn_dark_mode.dark-mode-active{
 .dark-mode-active a.link_r,
 .dark-mode-active p, 
 .dark-mode-active  span,
+.dark-mode-active  label,
 .dark-mode-active .fas,
 .dark-mode-active  .far,
 .dark-mode-active  .fa{

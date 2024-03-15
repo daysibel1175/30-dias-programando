@@ -91,7 +91,7 @@
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" href="#">Entrar</a>
-                                        <a class="dropdown-item" href="#">Cadastre-se</a>
+                                        <a class="dropdown-item" href="./src/cadastro.html">Cadastre-se</a>
                                     </div>
                                 </li>
 
@@ -141,7 +141,7 @@
                     <!-- body da tab conta -->
                     <div class="tab-pane fade show active" id="conta" role="tabpanel" aria-labelledby="tab-conta">
                         <h2 class="titulos">Detalhes da conta</h2>
-                        <form class="form_tri needs-validation" id="formLogin" novalidate>
+                        <form class="form_tri needs-validation" id="formLogin" action="" method="POST" novalidate>
                             <div class="form-group">
                                 <label for="inputEmail">Email </label>
                                 <input type="email" class="form-control " id="inputEmail" 
@@ -158,7 +158,7 @@
                                     <div class="invalid-feedback">
                                         senha invalida
                                                                    </div>
-                                    <small id="passwordHelp" class="form-text text-muted"> A senha deve conter pelo menos 8 digitos</small>
+                                    <small id="passwordHelp" class="form-text text-muted"> A senha deve conter maiuscula e minuscula e no minimo 8 caracteres.</small>
                                     
                             </div>
                             
@@ -253,12 +253,12 @@
                         <div class="registro">
                             <a class="form-link link_r" href="#">Registre-se para conta</a>
                             <button type="submit" class="btn btn-primary link_cp" 
-                                id="btnEntrar">Entrar</button>
+                                id="btnEntrar" form="formLogin">Entrar</button>
                         </div>
                         <hr>
                         <div class="cancelar_pedido">
                             <a class="link_cp" href="#">Cancelar pedido</a>
-                            <button type="submit" form="formLogin" class="btn btn-primary link_cp" id="btnContinuarComprando">Continuar
+                            <button type="button" form="formLogin" class="btn btn-primary link_cp" id="btnContinuarComprando">Continuar
                                 comprando</button>
                         </div>
 
@@ -339,9 +339,7 @@
     <script src="./src/script/menuDropdown.js"></script>
     <script src="./src/script/dark-mode.js"></script>
     <script src="./src/script/varsDoForm.js"></script>´
-
-
-
+<script src="./src/script/api.js"></script>
 </body>
 
 </html>

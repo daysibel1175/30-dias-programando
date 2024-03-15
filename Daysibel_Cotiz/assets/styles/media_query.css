@@ -27,7 +27,6 @@
   }
   #navbarNavDropdown,
   #menu-usuario {
-
     border: 1px solid var(--cinza-claro);
     border-radius: 12px;
     margin: 0;
@@ -38,7 +37,7 @@
   #menu-usuario{
     right: 0%;
     left: 0%;
-    padding: 10px 0 10px 10px;
+    padding: 10px 10px 10px 10px;
     max-width: fit-content !important;
     max-height: max-content;
     background-color: var(--branco);
@@ -47,7 +46,11 @@
   .itens.dropdown.show{
     padding: 0;
   }
-
+   .dropdown-item{
+    padding: 3px !important;
+    display: flex !important;
+    max-width: fit-content !important;
+      }
   #navbarNavDropdown{
     right: 18px;
     padding: 5px 30px;
@@ -58,8 +61,7 @@
     padding: 0;
     text-align: start;
     left: 0 !important;
-    min-width: 6.2rem;
-    overflow: hidden;
+    min-width: min-content;
     top: 80px !important;
   }
   .dark-mode-active .dropdown-menu.show
